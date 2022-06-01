@@ -2,3 +2,6 @@
 一個一個與前者比對，當後者的數字等於目標加總值減掉前者時，即為答案
 
 # Solution 2: (One-pass hash map)
+新增一個hashmap，addUpToTarget為目標加總值減掉當前for迴圈中的當前索引值之數值。
+當map.containsKey(addUpToTarget) == true(也就是該值存在)，
+則回傳新的int[]，放入addUpToTarget 與 for迴圈中當前索引值。
