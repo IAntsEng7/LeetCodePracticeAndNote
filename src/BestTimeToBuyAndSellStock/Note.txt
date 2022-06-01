@@ -1,0 +1,10 @@
+# Solution 1: (暴力解)
+計算所有可能的交易及對應的利潤，並從中找出最大的利潤
+Build in (1 sec, 861 ms), (1 sec, 669 ms), (1 sec, 718 ms)
+
+
+# Solution 2: (One pass)
+購買日價格減掉售出日價格，儲存當下最大利潤，直到最後一日。
+Build in (1 sec, 636 ms), (1 sec, 623 ms), (1 sec, 702 ms)
+
+Input: prices = [7, 1, 5, 3, 6, 4]

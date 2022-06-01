@@ -1,12 +1,12 @@
-package BestTimeToButAndSellStock;
+package BestTimeToBuyAndSellStock;
 
 public class Solution1 {
 
-  public int maxProfit(int[] prices) {
+  public static int maxProfit1(int[] prices) {
     return calculate(prices, 0);
   }
 
-  public int calculate(int[] prices, int s) {
+  public static int calculate(int[] prices, int s) {
     if (s >= prices.length) {
       return 0;
     }
@@ -28,5 +28,4 @@ public class Solution1 {
     }
     return max;
   }
-
 }
