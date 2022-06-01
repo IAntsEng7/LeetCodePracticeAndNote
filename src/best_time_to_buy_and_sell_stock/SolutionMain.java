@@ -1,7 +1,7 @@
-package BestTimeToBuyAndSellStock;
+package best_time_to_buy_and_sell_stock;
 
-import static BestTimeToBuyAndSellStock.Solution1.maxProfit1;
-import static BestTimeToBuyAndSellStock.Solution2.maxProfit2;
+import static best_time_to_buy_and_sell_stock.Solution1.maxProfit1;
+import static best_time_to_buy_and_sell_stock.Solution2.maxProfit2;
 
 public class SolutionMain {
   public static void main(String[] args) {
@@ -13,8 +13,8 @@ public class SolutionMain {
     //    int[] prices = {7, 6, 4, 3, 1};
 
     // Solution 1:
-    //    System.out.println(maxProfit1(prices));
+    System.out.println("Solution 1" + maxProfit1(prices));
     // Solution 2:
-    System.out.println(maxProfit2(prices));
+    System.out.println("Solution 2" + maxProfit2(prices));
   }
 }
