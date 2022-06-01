@@ -1,0 +1,4 @@
+# Solution 1: (暴力解)
+一個一個與前者比對，當後者的數字等於目標加總值減掉前者時，即為答案
+
+# Solution 2: (One-pass hash map)
