@@ -1,6 +1,8 @@
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 You can return the answer in any order.
+給予一個數列與目標加總值，回傳陣列中數字可以符合目標加總值的數字。
+  不使用重複的數字(索引值相同)
 
 
 
