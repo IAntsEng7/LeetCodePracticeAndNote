@@ -1,7 +1,7 @@
-package medium.best_time_to_buy_and_sell_stock;
+package medium.best_time_to_buy_and_sell_stock_II_122;
 
-import static medium.best_time_to_buy_and_sell_stock.Solution1.maxProfit1;
-import static medium.best_time_to_buy_and_sell_stock.Solution2.maxProfit2;
+import static medium.best_time_to_buy_and_sell_stock_II_122.Solution1.maxProfit1;
+import static medium.best_time_to_buy_and_sell_stock_II_122.Solution2.maxProfit2;
 
 public class SolutionMain {
   public static void main(String[] args) {
