@@ -1,4 +1,4 @@
-package easy.merge_sorted_array;
+package easy.merge_sorted_array_88;
 
 import java.util.Arrays;
 

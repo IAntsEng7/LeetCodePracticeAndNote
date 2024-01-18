@@ -1,7 +1,7 @@
-package easy.two_sum;
+package easy.two_sum_1;
 
-import static easy.two_sum.Solution1.twoSum1;
-import static easy.two_sum.Solution2.twoSum2;
+import static easy.two_sum_1.Solution1.twoSum1;
+import static easy.two_sum_1.Solution2.twoSum2;
 
 import java.util.Arrays;
 

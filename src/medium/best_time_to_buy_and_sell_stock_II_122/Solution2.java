@@ -1,4 +1,4 @@
-package medium.best_time_to_buy_and_sell_stock;
+package medium.best_time_to_buy_and_sell_stock_II_122;
 
 public class Solution2 {
 
