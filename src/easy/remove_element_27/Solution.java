@@ -1,4 +1,4 @@
-package easy.remove_element;
+package easy.remove_element_27;
 
 public class Solution {
   public static int removeElement(int[] nums, int val) {
