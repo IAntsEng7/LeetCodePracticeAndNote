@@ -9,7 +9,7 @@ public class Solution {
       nums1[i] = nums2[index++];
     }
     Arrays.sort(nums1);
-    System.out.println("Result: " + Arrays.toString(nums1));
+//    System.out.println("Result: " + Arrays.toString(nums1));
   }
 
   public static void main(String[] args) {
