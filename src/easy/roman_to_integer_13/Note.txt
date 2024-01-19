@@ -1,0 +1,53 @@
+package easy.roman_to_integer_13;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Solution {
+
+  public static int romanToInt(String s) {
+
+    // create map<RomanCharacter, IntegerValue>
+    HashMap<Character, Integer> romanMap = new HashMap<>();
+    romanMap.put('I', 1);
+    romanMap.put('V', 5);
+    romanMap.put('X', 10);
+    romanMap.put('L', 50);
+    romanMap.put('C', 100);
+    romanMap.put('D', 500);
+    romanMap.put('M', 1000);
+
+    int result = 0;
+
+    for (int i = 0; i < s.length(); i++) {
+      char currentSymbol = s.charAt(i);
+      int currentValue = romanMap.get(currentSymbol);
+
+      // 這段程式碼主要是處理羅馬數字中可能涉及到的減法情況，在羅馬數字表示中，有一些特殊情況需要使用減法。
+      // 例如，IV 表示 4，其中 I（1）在 V（5）之前，所以需要進行減法操作（5 - 1）。
+      // 同樣的情況還有 IX（9），XL（40），XC（90），CD（400），CM（900）等。
+      if (i < s.length() - 1) {
+        // 此條件判斷確保在遍歷字串時不會越界，也就是當前字符不是最後一個字符。
+        char nextSymbol = s.charAt(i + 1); // 獲取當前字符的下一個字符
+        int nextValue = romanMap.get(nextSymbol); // 通過HashMap獲取下一個字符對應的整數值。
+
+        if (currentValue < nextValue) {
+          // 判斷當前字符的值是否小於下一個字符的值，如果是，說明需要進行減法操作。
+          result += (nextValue - currentValue); // 將減法操作的結果累加到最終的整數值中。
+          i++; // 因為進行了減法操作，當前字符和下一個字符都被使用了，所以需要將指針向後移動一位，跳過下一個字符。
+          continue; // 跳過當前迴圈的剩餘部分，直接開始下一次迴圈。
+        }
+      }
+
+      result += currentValue; // 如果不滿足減法操作的條件，表示當前字符不需要進行減法操作，直接將當前字符的值加到最終的整數值中
+    }
+
+    return result;
+  }
+
+  public static void main(String[] args) {
+
+    romanToInt("MCMXCIV");
+    System.out.println("Roman trans to Integer: " + romanToInt("MCMXCIV"));
+  }
+}

@@ -32,21 +32,11 @@ public class PrimeNumberCount {
         for (String str : targetList) {
             String[] split = str.split("");
             switch (split[split.length - 1]) {
-                case "1":
-                    target1List.add(str);
-                    break;
-                case "3":
-                    target3List.add(str);
-                    break;
-                case "5":
-                    target5List.add(str);
-                    break;
-                case "7":
-                    target7List.add(str);
-                    break;
-                case "9":
-                    target9List.add(str);
-                    break;
+                case "1" -> target1List.add(str);
+                case "3" -> target3List.add(str);
+                case "5" -> target5List.add(str);
+                case "7" -> target7List.add(str);
+                case "9" -> target9List.add(str);
             }
         }
         System.out.println("1: " + target1List.size());
