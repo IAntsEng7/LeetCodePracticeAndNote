@@ -7,7 +7,11 @@ You are giving candies to these children subjected to the following requirements
 
 Return the minimum number of candies you need to have to distribute the candies to the children.
 
-
+如果鄰居的 rating 比你高，那他的糖果就會比你多，相同 rating的人糖果數目可以不同。
+Ex:
+rating: 12311 -> 糖果 12311
+rating: 122421 -> 糖果 121321
+也就是永遠遵循的 rating 比你高糖果比你多，相等就任意。
 
 Example 1:
 
